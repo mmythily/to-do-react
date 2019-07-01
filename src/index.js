@@ -18,7 +18,20 @@ class BuyBreadListItem extends React.Component {
   render() {
     return (
       <tr class="todo-list-item">
-        <td>Bu Bread</td>
+        <td>Buy Bread</td>
+        <td>
+          <input type="checkbox" />
+        </td>
+      </tr>
+    );
+  }
+}
+
+class TakeOverListItem extends React.Component {
+  render() {
+    return (
+      <tr class="todo-list-item">
+        <td>Take Over the World</td>
         <td>
           <input type="checkbox" />
         </td>
@@ -45,6 +58,7 @@ class TodoList extends React.Component {
           <tbody>
             <WalkDogListItem />
             <BuyBreadListItem />
+            <TakeOverListItem />
           </tbody>
         </table>
       </div>
